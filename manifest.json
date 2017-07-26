@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "TEMPLATE",
+  "description": "TEMPLATE",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "img/icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "notifications"
+  ],
+  "background": {
+    "scripts": ["bin/background.js"]
+  },
+
+  "icons": {
+    "16":  "img/icon.png",
+    "48":  "img/icon.png",
+    "128": "img/icon.png"
+  }
+
+}
