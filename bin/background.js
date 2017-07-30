@@ -45,20 +45,20 @@ function updateState(json)
 	        var n = new Notification(str + " is on live", options);
 
 	        chrome.browserAction.setBadgeText({
-            	text: 'ON'
+            		text: 'ON'
         	});
         	chrome.browserAction.setBadgeBackgroundColor({
-            	color: 'green'
+            		color: 'green'
         	})
-		}
+	}
 		old_state = true;
 	} else {
 		old_state = false;
 		chrome.browserAction.setBadgeText({
-            text: 'OFF'
-        });
-        chrome.browserAction.setBadgeBackgroundColor({
-            color: 'gray'
-        })
+            		text: 'OFF'
+        	});
+        	chrome.browserAction.setBadgeBackgroundColor({
+            		color: 'gray'
+        	})
 	}
 }
